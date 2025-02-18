@@ -3,7 +3,6 @@
 import { useSession } from "next-auth/react";
 import useCurrentUser from "../hooks/useCurrentUser";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 export default function Profiles() {
   const router = useRouter();
@@ -29,7 +28,7 @@ export default function Profiles() {
           Who is watching?
         </h1>
         <div className="flex items-center justify-center gap-8 mt-10">
-          <div onClick={() => router.push('/')}>
+          <div onClick={() => router.push("/")}>
             <div className="group flex-row w-44 mx-auto">
               <div
                 className="
@@ -46,7 +45,7 @@ export default function Profiles() {
                 overflow-hidden
               "
               >
-                <Image src="/images/default-blue.png" alt="Profile" />
+                <img src="/images/default-blue.png" alt="Profile" />
               </div>
 
               <div

@@ -22,7 +22,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
             alt="Profile"
           />
           <p className="text-white text-sm group-hover/item:underline">
-            { currUser.name }
+            {currUser.name}
           </p>
         </div>
         <hr className="bg-gray-600 border-0 h-px my-4" />
